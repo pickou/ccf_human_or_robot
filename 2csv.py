@@ -1,4 +1,4 @@
-﻿# convert original data to csv file
+# convert original data to csv file
 # (replace '\x01' by ',')
 
 sample_size = 1000000 # size
@@ -14,10 +14,17 @@ number_lines = 0
 dt='1'
 lines=open(file_open_name[choose])
 for line in lines:
-    line= line.replace('\n','')
+    #line= line.replace('\n','')
     line=line.replace('\x01',',')
     line_list=line.split(',')
-    # print line_list[1]
+    temp=line_list[0:4]
+    if choose==0:
+        temp=temp+line_list[-1:]
+    else:
+        #如果是test文件则多加一列全为0的label
+        temp=temp+['0\n']
+    #print temp
+    line=','.join(temp)
     # print line
     number_lines=number_lines+1
     if(line_list[1]==dt):#同一天的记录写到一个文件中
