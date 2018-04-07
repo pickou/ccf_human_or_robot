@@ -1,5 +1,3 @@
-# Human or Robots?
-
 ## data/rematch
 rematch data directory, including *tar.gz and *.info
 
