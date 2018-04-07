@@ -1,7 +1,3 @@
-# human-or-robot
-Human or robot - ccf contest
-
-
 ## data/rematch
 rematch data directory, including *tar.gz and *.info
 
