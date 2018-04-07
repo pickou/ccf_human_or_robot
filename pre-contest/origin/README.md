@@ -6,4 +6,4 @@ This directory includes three files. They are all original files.
 
 ## Dataset Download
 - Link: https://pan.baidu.com/s/1hsNBc92
-- Password: 9xg6。
+- Password: 9xg6
